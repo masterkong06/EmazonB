@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class ProductBox extends Component {
   render() {
     return <div className="ProductBox">
-      <h1>Product Name</h1>
+      <h1>Product Name!</h1>
 
       <img alt=''/>
       <h2> Price</h2>
