@@ -5,6 +5,8 @@ import ShoppingPage from "./components/ShoppingPage";
 import "./index.css";
 import ProductGrid from "./components/ProductGrid.js";
 import ProductCart from "./components/ProductCart.js";
+import Inventory from "./components/Inventory.js";
+
 console.log("App");
 const baseURL = "http://localhost:3003";
 export default class App extends Component {
@@ -94,46 +96,8 @@ export default class App extends Component {
     return (
       <div>
         <Header></Header>
+        <Inventory products={ this.state.products }/>
         <NewForm handleAddProduct={this.handleAddProduct} />
-
-        {/* Displaying the product info */}
-        <div className="productShow">
-          {this.state.products.map((product) => {
-            return (
-              <div >
-                <ul key={product._id}>
-                  <li>
-                    <h3>Product: {product.name}</h3>
-                  </li>
-                  <li>Price: ${product.price} </li>
-                  <br />
-                  <li>Image Link: {product.image}</li>
-                  <br />
-                  <li>Category: {product.category}</li>
-                  <br />
-                  <li>Subcategory: {product.subcategory}</li>
-                  <br />
-                  <li>Brand: {product.brand} </li>
-                  <br />
-                  <li> Description: {product.description}</li>
-                  <br />
-                  <li>Quantity: {product.quantity} </li>
-                  <br />
-                  <li>Tags: {product.tags}</li>
-                  <br />
-                  <button onClick={() => this.editProduct(product._id)}>EDIT</button>
-                  <button onClick={() => this.deleteProduct(product._id)}>
-                    DELETE
-                  </button>
-                </ul>
-                <div>
-                  <img src={product.image} width="300" alt="" onClick={() => this.showProduct(product._id)}></img>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-
         <ShoppingPage></ShoppingPage>
         <ProductGrid />
         <ProductCart />
