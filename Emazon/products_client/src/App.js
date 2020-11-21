@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import NewForm from "./components/NewForm.js";
 import Header from "./components/Header.js";
-import ShoppingPage from "./components/ShoppingPage";
+import ShoppingPage from "./components/ShoppingPage.js";
 import "./index.css";
 import ProductGrid from "./components/ProductGrid.js";
 import ProductCart from "./components/ProductCart.js";
@@ -46,7 +46,7 @@ export default class App extends Component {
   }
 
     // trying out a show method //
-    showProduct(id) {
+  showProduct(id) {
     fetch(baseURL + "/products/" + id, {
       method: "PUT",
     }).then((response) => {
@@ -96,8 +96,8 @@ export default class App extends Component {
     return (
       <div>
         <Header></Header>
-        <Inventory products={ this.state.products }/>
         <NewForm handleAddProduct={this.handleAddProduct} />
+        <Inventory products={ this.state.products }/>
         <ShoppingPage></ShoppingPage>
         <ProductGrid />
         <ProductCart />
