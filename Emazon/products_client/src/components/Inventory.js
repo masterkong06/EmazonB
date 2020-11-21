@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import ProductBox from "./Product.js"
 export default class Inventory extends Component {
     render() {
         return (
@@ -8,6 +8,7 @@ export default class Inventory extends Component {
                 {this.props.products.map((product) => {
                     return (
                         <div >
+                            <ProductBox />
                             <ul key={product._id}>
                             <li>
                                 <h3>Product: {product.name}</h3>
