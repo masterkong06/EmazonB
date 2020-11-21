@@ -19,7 +19,7 @@ export default class Header extends Component {
           </form>
         </div>
         <div className="navBar">
-          {" "}
+          
           <ul>
             {" "}
             <li> Holiday Deals </li> |<li> Gift Cards </li> |
