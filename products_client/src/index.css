@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.tbody {
+  border: 1px solid black;
+}
+
+.logo {
+  background-color: rgb(1, 7, 65);
+  color: rgb(255, 255, 255);
+}
+.login-btn {
+  background-color: rgb(1, 7, 65);
+  color: rgb(255, 255, 255);
+}
+.navBar {
+  background-color: rgb(1, 7, 65);
+  color: rgb(255, 255, 255);
+  height: 40px;
+  float: top;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.celebrated {
+  color: blueviolet;
+}
+
+li {
+  display: inline;
+}
+
+.SearchBar {
+  color: black;
+  background-color: rgb(192, 192, 192);
+  display: flex;
+
+  border: 1px solid grey;
+}
+
+.FormOne {
+  border: 1px solid black;
+}
+
+.Banner {
+  background-color: rgb(221, 221, 221);
+  color: rgb(56, 56, 56);
+  height: 50px;
+}
+
+input {
+  height: 20px;
+  border-radius: 25px;
+}
+.ScreenTop {
+  background-color: rgb(1, 7, 65);
+  color: rgb(255, 255, 255);
+  border: 1px solid black;
+  height: 10px;
+}
+.input {
+  background-color: grey;
+}
+
+.fa-shopping-cart {
+  float: right;
+  font-size: 30px;
+  padding: 10px;
+}
+
