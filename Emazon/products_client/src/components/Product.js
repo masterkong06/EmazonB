@@ -5,9 +5,9 @@ export default class ProductBox extends Component {
     return ( 
       <div>
         <h1>Product Component</h1>
+        
       </div>
     )
-
   }
 }
 
