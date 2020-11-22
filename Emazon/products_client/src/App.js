@@ -7,13 +7,14 @@ import ProductGrid from "./components/ProductGrid.js";
 import ProductCart from "./components/ProductCart.js";
 import Inventory from "./components/Inventory.js";
 
-console.log("App");
+// console.log("App");
+
 const baseURL = "http://localhost:3003";
 export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      products: [],
+      products: []
     };
 
     this.getProducts = this.getProducts.bind(this);
@@ -96,9 +97,9 @@ export default class App extends Component {
     return (
       <div>
         <Header></Header>
-        <Inventory products={ this.state.products }/>
         <NewForm handleAddProduct={this.handleAddProduct} />
-        <ShoppingPage></ShoppingPage>
+        <Inventory products={ this.state.products }/>
+        <ShoppingPage />
         <ProductGrid />
         <ProductCart />
       </div>
