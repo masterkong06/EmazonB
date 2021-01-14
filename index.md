@@ -1,4 +1,4 @@
-## **EMAZON -- Project 3**
+## **EMAZON -- Gerneral Assembly Software Engineering Intensive Project 3**
 ### **[Emazon](https://emazon-client.herokuapp.com/)** --Heroku
 
 **Jeff Brown, Romane Marshall, Stephanie Quinn Strickland, Winton Wedderburn**
